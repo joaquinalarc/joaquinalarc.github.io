@@ -99,6 +99,24 @@ h2 {
     text-decoration: underline;
 }
 
+.level-beginner {
+    background-color: #d4edda; /* Verde pastel */
+    color: #155724;
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.level-intermediate {
+    background-color: #fff3cd; /* Amarillo pastel */
+    color: #856404;
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
 footer {
     margin-top: 20px;
     text-align: center;
