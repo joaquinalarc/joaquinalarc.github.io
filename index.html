@@ -47,6 +47,10 @@
         }
     </style>
 </head>
+        <title>Joaquin Alarcon - Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
 <body>
     <header>
         <h1>Joaquin Alarcon - Professional Portfolio</h1>
@@ -60,6 +64,11 @@
         </nav>
     </header>
 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my professional portfolio. Here you will find my certifications, technical projects, and skills as an aspiring aerospace engineer.</p>
+    </section>
+    
     <div class="filter-buttons">
     <button id="all" onclick="filterItems('all')" class="active">All</button>
     <button id="beginner" onclick="filterItems('beginner')">Beginner</button>
@@ -70,26 +79,28 @@
     <button id="kinematics" onclick="filterItems('kinematics')">Kinematics</button>
 </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my professional portfolio. Here you will find my certifications, technical projects, and skills as an aspiring aerospace engineer.</p>
-    </section>
+        <div class="cert-container">
+            <div class="cert beginner data scripting">
+                <img src="images/matlab_logo.png" alt="MATLAB Logo" class="cert-logo">
+                <div class="cert-info">
+                    <h3>MATLAB Onramp</h3>
+                    <p><strong>Level:</strong> Beginner</p>
+                    <p><strong>Skills:</strong> Data Analysis, Scripting, Plotting</p>
+                    <p>This course introduced me to the basics of MATLAB, including data analysis and visualization.</p>
+                    <a href="https://matlabacademy.mathworks.com/" target="_blank">View Certificate</a>
+                </div>
+            </div>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="cert">
-            <h3>MATLAB Onramp</h3>
-            <p><strong>Level:</strong> Beginner</p>
-            <p><strong>Skills:</strong> Data Analysis, Scripting, Plotting</p>
-            <p>This course introduced me to the basics of MATLAB, including data analysis and visualization.</p>
-            <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=ee525e53-3c87-4635-98c9-70eccea044af&" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert">
-            <h3>Mechanics: Rotational Dynamics</h3>
-            <p><strong>Level:</strong> Intermediate</p>
-            <p><strong>Skills:</strong> Physics, Kinematics, Problem Solving</p>
-            <p>In-depth understanding of rotational dynamics and its applications in physics.</p>
-            <a href="https://mitxonline.mit.edu/certificate/90b51161-2662-4d5c-95ec-141e18e2a016/" target="_blank">View Certificate</a>
+            <div class="cert intermediate physics kinematics">
+                <img src="images/mitx_logo.png" alt="MITx Logo" class="cert-logo">
+                <div class="cert-info">
+                    <h3>Mechanics: Rotational Dynamics</h3>
+                    <p><strong>Level:</strong> Intermediate</p>
+                    <p><strong>Skills:</strong> Physics, Kinematics, Problem Solving</p>
+                    <p>In-depth understanding of rotational dynamics and its applications in physics.</p>
+                    <a href="https://mitxonline.mit.edu/certificate/" target="_blank">View Certificate</a>
+                </div>
+            </div>
         </div>
     </section>
 
