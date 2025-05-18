@@ -47,25 +47,44 @@ h2 {
     transform: scale(1.05);
 }
 
+.cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
 .cert {
     background-color: #fff;
+    display: flex;
+    width: 30%;
+    height: 150px;
     margin: 15px 0;
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    align-items: center;
 }
 .cert:hover {
     transform: scale(1.02);
 }
+.cert-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+.cert-info {
+    flex-grow: 1;
+}
 .cert h3 {
     margin: 0;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #333;
 }
 .cert p {
-    margin: 5px 0;
-    line-height: 1.5;
+    margin: 2px 0;
 }
 .cert a {
     color: #007bff;
@@ -74,14 +93,6 @@ h2 {
 }
 .cert a:hover {
     text-decoration: underline;
-}
-
-.cert-logo {
-    height: 30 px;
-    width: auto;
-    margin-right: 15px;
-    border-radius: 5px;
-    object-fit: contain;
 }
 
 footer {
