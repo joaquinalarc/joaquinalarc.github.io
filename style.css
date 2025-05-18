@@ -56,14 +56,15 @@ h2 {
 .cert {
     background-color: #fff;
     display: flex;
-    width: 50%;
+    flex: 1 1 30%;
     height: auto;
-    margin: 15px 0;
+    margin: 15px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
     align-items: center;
+    min-width: 300px;
 }
 .cert:hover {
     transform: scale(1.02);
@@ -85,7 +86,7 @@ h2 {
 }
 .cert p {
     margin: 4px 0;
-    line-height: 1.1;
+    line-height: 1.4;
 }
 .cert-info p + p {
     margin-top: 8px;
