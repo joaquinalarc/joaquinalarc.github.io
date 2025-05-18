@@ -76,6 +76,14 @@ h2 {
     text-decoration: underline;
 }
 
+.cert-logo {
+    height: 60px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
 footer {
     margin-top: 20px;
     text-align: center;
