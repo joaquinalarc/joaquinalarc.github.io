@@ -48,16 +48,15 @@ h2 {
 }
 
 .cert-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
 }
 .cert {
     background-color: #fff;
     display: flex;
-    flex: 1 1 30%;
-    max-width: 350px;
+    flex-direction: row;
     height: auto;
     margin: 15px;
     padding: 15px;
