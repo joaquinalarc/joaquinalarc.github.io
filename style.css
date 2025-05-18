@@ -56,8 +56,8 @@ h2 {
 .cert {
     background-color: #fff;
     display: flex;
-    flex: 1 1 45%; /* Cambiado para mantener dos por fila */
-    max-width: 500px; /* Limitar el ancho máximo */
+    flex: 1 1 45%;
+    max-width: 500px;
     height: auto;
     margin: 15px;
     padding: 15px;
