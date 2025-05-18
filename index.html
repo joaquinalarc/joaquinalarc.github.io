@@ -1,56 +1,6 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Joaquin Alarcon - Professional Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-<head>    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            margin: 20px 0;
-        }
-        h2 {
-            color: #007bff;
-        }
-        .cert {
-            background-color: #fff;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .cert a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 0.8em;
-            color: #666;
-        }
-    </style>
-</head>
-        <title>Joaquin Alarcon - Professional Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -58,7 +8,6 @@
     <header>
         <h1>Joaquin Alarcon - Professional Portfolio</h1>
         <nav>
-            <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#certifications">Certifications</a>
             <a href="#projects">Projects</a>
@@ -71,20 +20,24 @@
         <h2>About Me</h2>
         <p>Welcome to my professional portfolio. Here you will find my certifications, technical projects, and skills as an aspiring aerospace engineer.</p>
     </section>
-    
-    <div class="filter-buttons">
-    <button id="all" onclick="filterItems('all')" class="active">All</button>
-    <button id="beginner" onclick="filterItems('beginner')">Beginner</button>
-    <button id="intermediate" onclick="filterItems('intermediate')">Intermediate</button>
-    <button id="data" onclick="filterItems('data')">Data Analysis</button>
-    <button id="scripting" onclick="filterItems('scripting')">Scripting</button>
-    <button id="physics" onclick="filterItems('physics')">Physics</button>
-    <button id="kinematics" onclick="filterItems('kinematics')">Kinematics</button>
-</div>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button id="all" onclick="filterItems('all')" class="active">All</button>
+            <button id="beginner" onclick="filterItems('beginner')">Beginner</button>
+            <button id="intermediate" onclick="filterItems('intermediate')">Intermediate</button>
+            <button id="data" onclick="filterItems('data')">Data Analysis</button>
+            <button id="scripting" onclick="filterItems('scripting')">Scripting</button>
+            <button id="physics" onclick="filterItems('physics')">Physics</button>
+            <button id="kinematics" onclick="filterItems('kinematics')">Kinematics</button>
+        </div>
 
         <div class="cert-container">
+            <!-- MATLAB Onramp -->
             <div class="cert beginner data scripting">
-                <img src="images/Matlab_Logo (1).png" alt="MATLAB Logo" class="cert-logo">
+                <img src="images/matlab_logo.png" alt="MATLAB Logo" class="cert-logo">
                 <div class="cert-info">
                     <h3>MATLAB Onramp</h3>
                     <p><strong>Level:</strong> Beginner</p>
@@ -94,8 +47,9 @@
                 </div>
             </div>
 
+            <!-- MITx Mechanics -->
             <div class="cert intermediate physics kinematics">
-                <img src="MIT.jpg" alt="MITx Logo" class="cert-logo">
+                <img src="images/mitx_logo.png" alt="MITx Logo" class="cert-logo">
                 <div class="cert-info">
                     <h3>Mechanics: Rotational Dynamics</h3>
                     <p><strong>Level:</strong> Intermediate</p>
@@ -125,7 +79,7 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: jalarcon@purdue.edu</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/joaquin-alarcon" target="_blank">joaquinalarcon</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/joaquinalarcon" target="_blank">joaquinalarcon</a></p>
     </section>
 </body>
 </html>
