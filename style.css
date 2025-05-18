@@ -86,6 +86,13 @@ h2 {
 .cert p {
     margin: 2px 0;
 }
+.cert p {
+    margin: 4px 0;
+    line-height: 1.4;
+}
+.cert-info p + p {
+    margin-top: 8px;
+}
 .cert a {
     color: #007bff;
     text-decoration: none;
