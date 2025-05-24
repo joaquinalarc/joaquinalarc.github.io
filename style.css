@@ -67,9 +67,32 @@
 .medal-icon {
   height: 1em;
   width: 1em;
-  margin-right: 5px;
-  vertical-align: text-bottom;
+  margin-right: 6px;
+  vertical-align: middle;
   object-fit: contain;
+}
+
+.level-beginner,
+.level-intermediate {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.level-beginner {
+  background: #d4edda;
+  color: #155724;
+}
+
+.level-intermediate {
+  background: #fff3cd;
+  color: #856404;
 }
 
 /* Level Labels */
