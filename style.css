@@ -6,16 +6,17 @@
   margin-bottom: 20px;
 }
 .filter-buttons button {
-  padding: 8px 16px;
+  padding: 6px 14px;
   background-color: #eee;
-  color: #333;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s;
   font-weight: 500;
+  font-size: 0.8rem;
 }
 .filter-buttons button.active,
+.filter-buttons button:hover {
   background-color: #007bff;
   color: #fff;
 }
@@ -23,34 +24,36 @@
 /* Grid Layout */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
 }
 
 /* Certification Card */
 .cert-card {
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  min-height: 250px;
+  font-size: 0.85rem;
+  gap: 8px;
 }
 .cert-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 .cert-card img {
-  width: 40px;
+  width: 36px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* Badges */
 .badges {
-  margin: 10px 0;
+  margin: 6px 0;
 }
 .badge {
   display: inline-block;
@@ -58,52 +61,31 @@
   color: white;
   padding: 3px 8px;
   border-radius: 10px;
-  font-size: 0.75rem;
-  margin-right: 6px;
-  margin-top: 5px;
+  font-size: 0.7rem;
+  margin-right: 4px;
+  margin-top: 4px;
 }
 
 /* Medal Icon */
 .medal-icon {
-  height: 1em;
-  width: 1em;
-  margin-right: 6px;
+  height: 0.9em;
+  width: 0.9em;
   vertical-align: middle;
   object-fit: contain;
-}
-
-.level-beginner,
-.level-intermediate {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.level-beginner {
-  background: #d4edda;
-  color: #155724;
-}
-
-.level-intermediate {
-  background: #fff3cd;
-  color: #856404;
 }
 
 /* Level Labels */
 .level-beginner, .level-intermediate {
   display: inline-flex;
   align-items: center;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-weight: bold;
-  margin-top: 8px;
-  font-size: 1rem;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+  margin-bottom: 8px;
 }
 .level-beginner {
   background: #d4edda;
@@ -120,7 +102,8 @@
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 6px;
+  font-size: 0.8rem;
 }
 .download-link:hover {
   text-decoration: underline;
