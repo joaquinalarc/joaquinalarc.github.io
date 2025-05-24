@@ -23,7 +23,7 @@
 
     <!-- Certifications Section with Interactive Filters -->
 <section id="certifications">
-  <h2>Certifications</h2>
+  <h2 style="text-align: center; color: white;">Certifications</h2>
 
   <!-- Filter Buttons -->
   <div class="filter-buttons">
@@ -40,113 +40,52 @@
     <div class="cert-card beginner data-analysis scripting">
       <img src="images/Matlab_Logo (1).png" alt="MATLAB Logo">
       <h3>MATLAB Onramp</h3>
-      <img src="images/Medallita_verde.png" class="medal-icon" alt="Beginner Medal"> Beginner
+      <span class="level-beginner">
+        <img src="images/Medallita_verde.png" class="medal-icon" alt="Medal"> Beginner
+      </span>
       <div class="badges">
         <span class="badge">Data Analysis</span>
         <span class="badge">Scripting</span>
         <span class="badge">Plotting</span>
       </div>
       <a href="certs/matlab_onramp.pdf" class="download-link" target="_blank">View Certificate</a>
+      <a href="#" class="more-info-button">More Info</a>
     </div>
 
     <div class="cert-card intermediate physics">
       <img src="images/MIT.jpg" alt="MITx Logo">
       <h3>Mechanics: Rotational Dynamics</h3>
-      <span class="level-intermediate"><img src="images/Medallita_amarilla.png" class="medal-icon"> Intermediate</span>
+      <span class="level-intermediate">
+        <img src="images/Medallita_amarilla.png" class="medal-icon" alt="Medal"> Intermediate
+      </span>
       <div class="badges">
         <span class="badge">Physics</span>
         <span class="badge">Kinematics</span>
         <span class="badge">Problem Solving</span>
       </div>
-      <a href="https://mitxonline.mit.edu/certificate/90b51161-2662-4d5c-95ec-141e18e2a016/" class="download-link" target="_blank">View Certificate</a>
+      <a href="certs/mitx_mechanics.pdf" class="download-link" target="_blank">View Certificate</a>
+      <a href="#" class="more-info-button">More Info</a>
     </div>
   </div>
 </section>
 
-<style>
-.filter-buttons {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+<script>
+function filterCerts(category) {
+  const allCards = document.querySelectorAll('.cert-card');
+  const buttons = document.querySelectorAll('.filter-buttons button');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  allCards.forEach(card => {
+    if (category === 'all') {
+      card.style.display = 'block';
+    } else {
+      card.style.display = card.classList.contains(category) ? 'block' : 'none';
+    }
+  });
 }
-.filter-buttons button {
-  padding: 8px 16px;
-  background-color: #eee;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.filter-buttons button.active,
-.filter-buttons button:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-}
-.cert-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-.cert-card:hover {
-  transform: translateY(-5px);
-}
-.cert-card img {
-  width: 40px;
-  height: auto;
-  margin-bottom: 10px;
-}
-.badges {
-  margin: 10px 0;
-}
-.badge {
-  display: inline-block;
-  background: #6c63ff;
-  color: white;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  margin-right: 6px;
-  margin-top: 5px;
-}
-.medal-icon {
-  width: 1em;
-  height: 1em;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-.level-beginner, .level-intermediate {
-  display: inline-flex;
-  align-items: center;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-weight: bold;
-  margin-top: 8px;
-}
-.level-beginner {
-  background: #d4edda;
-  color: #155724;
-}
-.level-intermediate {
-  background: #fff3cd;
-  color: #856404;
-}
-.download-link {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-.download-link:hover {
-  text-decoration: underline;
-}
-</style>
+</script>
 
 <script>
 function filterCerts(category) {
