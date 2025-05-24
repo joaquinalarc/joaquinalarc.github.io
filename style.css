@@ -47,11 +47,11 @@ h2 {
     transform: scale(1.05);
 }
 
-.cert-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
 }
 .cert {
     background-color: #fff;
