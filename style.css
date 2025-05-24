@@ -1,136 +1,100 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-nav a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-}
-section {
-    margin: 20px 0;
-}
-h2 {
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
+/* Filter Buttons */
 .filter-buttons {
-    margin: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .filter-buttons button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 8px 16px;
+  background-color: #eee;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
 }
+.filter-buttons button.active,
 .filter-buttons button:hover {
-    background-color: #0056b3;
-}
-.filter-buttons button.active {
-    background-color: #0056b3;
-    transform: scale(1.05);
+  background-color: #007bff;
+  color: #fff;
 }
 
+/* Grid Layout */
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
+
+/* Certification Card */
+.cert-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
-.cert {
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    align-items: center;
+.cert-card:hover {
+  transform: translateY(-5px);
 }
-.cert:hover {
-    transform: scale(1.02);
+.cert-card img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
 }
-.cert-logo {
-    height: 50px;
-    width: auto;
-    margin-right: 15px;
-    border-radius: 5px;
-    object-fit: contain;
-}
-.cert-info {
-    flex-grow: 1;
+
+/* Badges */
+.badges {
+  margin: 10px 0;
 }
 .badge {
-  font-size: 0.75rem;
+  display: inline-block;
+  background: #6c63ff;
+  color: white;
   padding: 3px 8px;
   border-radius: 10px;
+  font-size: 0.75rem;
+  margin-right: 6px;
+  margin-top: 5px;
 }
-.level-beginner {
-    background-color: #d4edda;
-    color: #155724;
-    padding: 3px 8px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 5px;
-    
+
+/* Medal Icon */
 .medal-icon {
   height: 1em;
   width: 1em;
   margin-right: 5px;
   vertical-align: text-bottom;
-}
-    
-}
-.level-intermediate {
-    background-color: #fff3cd;
-    color: #856404;
-    padding: 3px 8px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 5px;
-}
-.cert h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
-}
-.cert p {
-    margin: 4px 0;
-    line-height: 1.4;
-}
-.cert-info p + p {
-    margin-top: 8px;
-}
-.cert a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-.cert a:hover {
-    text-decoration: underline;
+  object-fit: contain;
 }
 
-footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0.8em;
-    color: #666;
+/* Level Labels */
+.level-beginner, .level-intermediate {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+.level-beginner {
+  background: #d4edda;
+  color: #155724;
+}
+.level-intermediate {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* Certificate Download Link */
+.download-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+.download-link:hover {
+  text-decoration: underline;
 }
