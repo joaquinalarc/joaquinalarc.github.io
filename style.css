@@ -86,6 +86,13 @@ h2 {
     display: inline-block;
     margin-top: 5px;
 }
+.medal-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+    object-fit: contain;
+}
 .level-intermediate {
     background-color: #fff3cd;
     color: #856404;
