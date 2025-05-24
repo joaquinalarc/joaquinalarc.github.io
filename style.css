@@ -75,25 +75,32 @@
 }
 
 /* Level Labels */
-.level-beginner, .level-intermediate {
+.level-beginner,
+.level-intermediate {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  background: #d4edda; /* o #fff3cd para intermediate */
+  color: #155724;       /* o #856404 para intermediate */
   padding: 4px 8px;
   border-radius: 12px;
-  font-weight: 600;
   font-size: 0.75rem;
+  font-weight: 600;
   line-height: 1;
   white-space: nowrap;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
-.level-beginner {
-  background: #d4edda;
-  color: #155724;
-}
+
 .level-intermediate {
   background: #fff3cd;
   color: #856404;
+}
+
+.medal-icon {
+  height: 0.85em;
+  width: 0.85em;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 /* Certificate Download Link */
