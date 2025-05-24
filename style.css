@@ -103,21 +103,34 @@
   color: #856404;
 }
 
-/* Certificate Download Link */
-.download-link,
-.more-info-button {
+/* Certificate Buttons */
+.download-link {
   display: block;
   background: #0984e3;
   color: white;
   padding: 8px;
-  margin: 6px 0 0;
+  margin: 6px 0 4px;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
   font-size: 0.8rem;
   transition: background 0.3s;
 }
-.download-link:hover,
-.more-info-button:hover {
+.download-link:hover {
   background: #74b9ff;
+}
+.more-info-button {
+  display: block;
+  background: #3b73ff;
+  color: white;
+  padding: 8px;
+  margin: 4px 0 0;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  transition: background 0.3s;
+}
+.more-info-button:hover {
+  background: #5f8dff;
 }
