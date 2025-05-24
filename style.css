@@ -78,6 +78,11 @@ h2 {
 .cert-info {
     flex-grow: 1;
 }
+.badge {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
 .level-beginner {
     background-color: #d4edda;
     color: #155724;
