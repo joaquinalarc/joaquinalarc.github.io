@@ -94,6 +94,12 @@
   box-shadow: none;
   color: inherit;
 }
+.level-beginner {
+  color: #27ae60;
+}
+.level-intermediate {
+  color: #e67e22;
+}
 
 /* Certificate Buttons */
 .download-link {
