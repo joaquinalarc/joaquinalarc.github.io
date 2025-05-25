@@ -52,7 +52,24 @@
 .cert-card img {
   width: 36px;
   height: auto;
-  margin: 0 auto 8px;
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.cert-logo {
+  width: 28px;
+  height: auto;
+}
+.cert-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 /* Badges */
@@ -67,40 +84,29 @@
   background: #a29bfe;
   color: white;
   padding: 4px 10px;
-  border-radius: 6px; /* menos circular */
+  border-radius: 6px;
   font-size: 0.7rem;
   font-weight: 500;
 }
 
-/* Medal Icon */
-.medal-icon {
-  height: 0.9em;
-  width: 0.9em;
-  object-fit: contain;
-  vertical-align: middle;
-}
-
-/* Level Labels */
+/* Level Tags */
 .level-beginner,
 .level-intermediate {
   display: inline-block;
   font-weight: 600;
   font-size: 0.8rem;
   text-align: center;
-  padding: 0;
+  padding: 4px 10px;
   margin: 10px auto;
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-  color: inherit;
+  border-radius: 8px;
 }
 .level-beginner {
-  color: #6a9178;
-  font-weight: bold;
+  background-color: #d4edda;
+  color: #27ae60;
 }
 .level-intermediate {
-  color: #f1c40f;
-  font-weight: bold;
+  background-color: #fff3cd;
+  color: #f39c12;
 }
 
 /* Certificate Buttons */
@@ -121,7 +127,7 @@
 }
 .more-info-button {
   display: block;
-  background: #1a2042;
+  background: #1b3dff;
   color: white;
   padding: 8px;
   margin: 4px 0 0;
@@ -132,5 +138,5 @@
   transition: background 0.3s;
 }
 .more-info-button:hover {
-  background: #5f8dff;
+  background: #2e54ff;
 }
