@@ -57,15 +57,15 @@
 /* Card Header */
 .cert-card {
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 300px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  max-width: 240px;
   width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 /* Header con logo y título */
@@ -77,13 +77,13 @@
 }
 
 .cert-logo {
-  width: 28px;
+  width: 24px;
   height: auto;
 }
 
 .cert-card h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -108,9 +108,9 @@
 .badge {
   background: #a29bfe;
   color: white;
-  font-size: 0.7rem;
-  padding: 4px 10px;
-  border-radius: 6px;
+  font-size: 0.65rem;
+  padding: 3px 8px;
+  border-radius: 5px;
 }
 
 /* Level Tags */
@@ -143,7 +143,7 @@
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   transition: background 0.3s;
 }
 .download-link:hover {
@@ -158,7 +158,7 @@
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   transition: background 0.3s;
 }
 .more-info-button:hover {
