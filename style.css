@@ -83,16 +83,21 @@
 /* Level Labels */
 .level-beginner,
 .level-intermediate {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 6px;
-  padding: 4px 8px;
+  gap: 10px;
+  padding: 10px 14px;
   border-radius: 12px;
   font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1;
+  font-size: 0.8rem;
+  line-height: 1.4;
   white-space: nowrap;
-  margin: 6px 0;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .level-beginner {
   background: #d4edda;
@@ -101,6 +106,12 @@
 .level-intermediate {
   background: #fff3cd;
   color: #856404;
+}
+.medal-icon {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  object-fit: contain;
 }
 
 /* Certificate Buttons */
