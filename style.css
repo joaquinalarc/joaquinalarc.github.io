@@ -93,6 +93,7 @@
   max-width: 180px;
   margin: 10px auto;
   background: transparent;
+  box-shadow: none;
 }
 .level-beginner {
   background-color: #d4edda;
