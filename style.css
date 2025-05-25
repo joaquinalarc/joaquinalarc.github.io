@@ -55,38 +55,62 @@
 }
 
 /* Card Header */
+.cert-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Header con logo y título */
 .card-header {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 10px;
 }
+
 .cert-logo {
   width: 28px;
   height: auto;
 }
+
 .cert-card h3 {
-  font-size: 1rem;
-  font-weight: 600;
   margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
-/* Badges */
+/* Nivel */
+.level {
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Skills */
 .badges {
-  margin: 10px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 6px;
 }
+
 .badge {
   background: #a29bfe;
   color: white;
+  font-size: 0.7rem;
   padding: 4px 10px;
   border-radius: 6px;
-  font-size: 0.7rem;
-  font-weight: 500;
 }
 
 /* Level Tags */
