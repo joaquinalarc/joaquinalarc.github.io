@@ -83,26 +83,18 @@
 /* Level Labels */
 .level-beginner,
 .level-intermediate {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  border-radius: 12px;
+  display: inline-block;
   font-weight: 600;
   font-size: 0.8rem;
-  width: 100%;
-  max-width: 180px;
+  text-align: center;
+  padding: 0;
   margin: 10px auto;
-  background: transparent;
+  background: none;
+  border-radius: 0;
   box-shadow: none;
+  color: inherit;
 }
-.level-beginner {
-  background-color: #d4edda;
-  color: #155724;
-}
-.level-intermediate {
-  background-color: #fff3cd;
-  color: #856404;
-}
+
 /* Certificate Buttons */
 .download-link {
   display: block;
